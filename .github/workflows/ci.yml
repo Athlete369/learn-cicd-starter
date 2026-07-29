@@ -41,5 +41,8 @@ jobs:
         run: test -z $(go fmt ./...)
       
       - name: Run Linter
-        run: staticcheck ./...
+        uses: dominikh/staticcheck-action@v1
+        with:
+          version: "latest"
+          install-go: false
   
