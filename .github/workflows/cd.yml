@@ -6,7 +6,7 @@ on:
 
 
 jobs:
-  Deploy:
+  deploy:
     name: Deploy
 
     steps:
